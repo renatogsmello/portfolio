@@ -3,9 +3,7 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     plumber = require('gulp-plumber'),
     browsersync = require('browser-sync'),
-    autoprefixer = require('gulp-autoprefixer'),
     sourcemaps = require('gulp-sourcemaps'),
-    ugligy = require('gulp-uglify'),
     newer = require('gulp-newer');
 
 gulp.task('imagemin', function(){
@@ -16,13 +14,12 @@ gulp.task('imagemin', function(){
 });
 
 gulp.task('sass', function () {
-  return gulp.src('src/assets/scss/**/*.scss')
+  return gulp.src('src/assets/sass/**/**/*.scss')
     .pipe(plumber())
     .pipe(newer('dist/assets/stylesheets'))
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
-    .pipe(autoprefixer('last 2 versions'))
     .pipe(plumber.stop())
     .pipe(gulp.dest('dist/assets/stylesheets'));
 });
@@ -37,6 +34,6 @@ gulp.task('browsersync', function(){
 });
 
 gulp.task('default', ['browsersync','imagemin', 'sass'], function(){
-    gulp.watch('src/assets/scss/*.scss',['sass']),
+    gulp.watch('src/assets/sass/**/**/*.scss',['sass']),
     gulp.watch('src/assets/images/**/**', ['imagemin'])
 })

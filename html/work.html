@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Renato Mello Web Developer</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+
+        <link href="dist/assets/stylesheets/reset.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="dist/assets/stylesheets/materialize.css" type="text/css" rel="stylesheet"   media="screen,projection"/>
+        <link href="dist/assets/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="dist/assets/stylesheets/horizontal-timeline.css" rel="stylesheet" media="screen,projection"/>
+        <script src="dist/assets/js/modernizr.js"></script>
+    </head>
+    <body>
+        <header>
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li>
+                    <div class="user-view">
+                        <div class="background"></div>
+                        <a href="#user">
+                            <img class="circle" src="dist/assets/images/eu.png">
+                        </a>
+                        <a href="#name">
+                            <span class="white-text name">Renato Mello</span>
+                        </a>
+                        <a href="#email"><span class="white-text email">renatogsmello@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a class="waves-effect" href="index.html"><i class="material-icons">person</i>Sobre</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">school</i>Formação Acadêmica</a></li>
+                <li><a class="waves-effect" href="skills.html"><i class="material-icons">code</i>Habilidades</a></li>
+                <li class="active"><a class="waves-effect" href="work.html"><i class="material-icons">work</i>Experiência Profissional</a></li>
+                <li><a class="waves-effect" href="#!"><i class="material-icons">photo_library</i>Portfolio</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+        </header>
+        <main>
+            <div class="container">
+                <h2 class="">Experiência Profissional</h2>
+                <section class="cd-horizontal-timeline">
+                    <div class="timeline">
+                        <div class="events-wrapper">
+                            <div class="events">
+                                <ol>
+                                    <li><a href="#0" data-date="01/02/2012" class="selected">Mar 2016 - Ago 2018</a></li>
+                                    <li><a href="#0" data-date="23/06/2013">Out 2015 - Mar 2016</a></li>
+                                    <li><a href="#0" data-date="18/01/2015">Abr 2015 - Out 2015</a></li>
+                                    <li><a href="#0" data-date="04/12/2015">2014</a></li>
+                                    <li><a href="#0" data-date="25/06/2016">Abr 2012 - Set 2012</a></li>
+                                </ol>
+
+                                <span class="filling-line" aria-hidden="true"></span>
+                            </div> <!-- .events -->
+                        </div> <!-- .events-wrapper -->
+
+                        <ul class="cd-timeline-navigation">
+                            <li><a href="#0" class="prev inactive">Prev</a></li>
+                            <li><a href="#0" class="next">Next</a></li>
+                        </ul> <!-- .cd-timeline-navigation -->
+                    </div> <!-- .timeline -->
+
+                    <div class="events-content">
+                        <ol>
+                            <li class="selected" data-date="01/02/2012">
+                                <h3>Confederação Brasileira de Futebol</h3>
+                                <em>Webdesigner</em>
+                                <p>	
+                                    Desenvolvimento do Front End de novos sistemas webs internos da empresa e melhorias visuais nos já existentes. Criação de material gráfico como crachás, cartões e credenciais.
+                                </p>
+                            </li>
+
+                            <li data-date="23/06/2013">
+                                <h3>UFRJ - LabEAD</h3>
+                                <em>Webdesigner</em>
+                                <p>	
+                                    Criação do sistema integrado de site institucional com a plataforma EAD através da utilização do Joomla e do Moodle. Responsável pela verificação e acerto do sistema no ambiente de teste. Vivência em atividades de suporte aos usuários sobre o funcionamento dos sites.
+                                </p>
+                            </li>
+
+                            <li data-date="18/01/2015">
+                                <h3>ArtAço</h3>
+                                <em>Webdesigner</em>
+                                <p>	
+                                    Cadastro dos produtos e serviços oferecidos pela empresa no site utilizando a plataforma Wordpress. Atividades de atualização e diagramação do catálogo de produtos. Responsável pelo alinhamento entre a estrégia de marketing com a gerência.
+                                </p>
+                            </li>
+
+                            <li data-date="04/12/2015">
+                                <h3>Freelancer</h3>
+                                <em>Webdesigner</em>
+                                <p>	
+                                    Realização de atividades de freelancer com a criação de newsletter, cartões de visita e logos.
+                                </p>
+                            </li>
+
+                            <li data-date="25/06/2016">
+                                <h3>CCESP - Central de Estágios</h3>
+                                <em>Estagiário em Design</em>
+                                <p>	
+                                    Atualização da Fanpage da PUC com novidades da instituição; oportunidades de emprego e admnistração da plataforma virtual da Mostra PUC.
+                                </p>
+                            </li>
+                        </ol>
+                    </div> <!-- .events-content -->
+                </section>
+            </div>
+        </main>
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="src/assets/js/bin/materialize.min.js"></script>
+        <script src="dist/assets/js/jquery.mobile.custom.min.js"></script>
+        <script src="dist/assets/js/main.js"></script>
+        
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+    </body>
+</html>

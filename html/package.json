@@ -3,31 +3,18 @@
   "version": "1.0.0",
   "description": "Meu portfolio",
   "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "minimatch": "^3.0.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/renatogsmello/Portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "Renato Mello",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/renatogsmello/Portfolio/issues"
-  },
-  "homepage": "https://github.com/renatogsmello/Portfolio#readme"
+    "gulp-sourcemaps": "^2.6.4"
+  }
 }

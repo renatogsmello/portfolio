@@ -1,0 +1,77 @@
+ body {
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+     background-color: #565c65;
+     color: white;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+header, main, footer {
+      padding-left: 300px;
+    }
+
+    @media only screen and (max-width : 992px) {
+      header, main, footer {
+        padding-left: 0;
+      }
+    }
+ol{
+    list-style: none;
+}
+#slide-out{
+    background-color: #6f757d;
+    
+    li{
+        .user-view{
+            .background{
+                background-color: #168282;
+            }
+            img.circle{
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+        }
+        
+        a{
+            color: white;
+            
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.05);
+            }
+        }
+    }
+}
+
+.sidenav-trigger{
+    i{
+        padding: 20px;
+    }
+}
+
+.main-title{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.f-36{
+    font-size: 36px;
+}
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.skills-progress{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
