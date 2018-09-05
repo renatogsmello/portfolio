@@ -22,6 +22,7 @@
                         <a href="#user">
                             <img class="circle" src="dist/assets/images/eu.png">
                         </a>
+<!--                        <a href="https://www.linkedin.com/in/renato-mello-20a5a84a/"><i class="fab fa-linkedin f-36"></i></a>-->
                         <a href="#name">
                             <span class="white-text name">Renato Mello</span>
                         </a>
@@ -29,35 +30,79 @@
                     </div>
                 </li>
                 <li class="active"><a class="waves-effect" href="index.html"><i class="material-icons">person</i>Sobre</a></li>
-                <li><a class="waves-effect" href="#!"><i class="material-icons">school</i>Formação Acadêmica</a></li>
+                <li><a class="waves-effect" href="education.html"><i class="material-icons">school</i>Formação Acadêmica</a></li>
                 <li><a class="waves-effect" href="skills.html"><i class="material-icons">code</i>Habilidades</a></li>
                 <li><a class="waves-effect" href="work.html"><i class="material-icons">work</i>Experiência Profissional</a></li>
                 <li><a class="waves-effect" href="#!"><i class="material-icons">photo_library</i>Portfolio</a></li>
+                
             </ul>
             <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
         </header>
         <main>
+            <img id="sobre-background" src="dist/assets/images/background.jpg">
             <div class="container">
-                <h1 class="main-title">Sobre</h1>
-                
-                <p class="text-justify">
-                    Formado em Design - Midia Digital pela PUC-RIO, como tecnólogo no SENAC, PHP, Desenvolvedor Front End na Coti Informática e atualmente cursando CBA - Gestão da TI no Instituto INFNET e Angular 6 na Coti Informática. Última experiência profissional foi o desenvolvimento dos sistemas internos da Confederação Brasileira de Futebol e experiências anteriores em construção de sites, confecção de catálogo de produtos e logos. Interesse por criação e tratamento de imagens, elaborar interfaces e webdesign. O que me motiva é a oportunidade de tornar o mundo digital mais acessível para todos.
-                </p>
-                <a href="https://www.linkedin.com/in/renato-mello-20a5a84a/"><i class="fab fa-linkedin f-36"></i></a>
+                <div class="mt-130">
+                    <span class="welcome-title"></span>
+                </div>
+<!--
+                <div id="hidden" style="visibility: hidden;">
+                    <hr id="divider">
+                    <div class="row mt-50">
+                        <div class="col s12 m4">
+                          <div class="center promo">
+                            <i class="material-icons">flash_on</i>
+                            <p class="promo-caption">Formado em Design</p>
+                            <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                          </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                          <div class="center promo">
+                            <i class="material-icons">group</i>
+                            <p class="promo-caption">Trabalho como Desenvolvedor</p>
+                            <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                          </div>
+                        </div>
+
+                        <div class="col s12 m4">
+                          <div class="center promo">
+                            <i class="material-icons">settings</i>
+                            <p class="promo-caption">Material Design</p>
+                            <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+-->
             </div>
         </main>
 
-     
+        
 
 
         <!--  Scripts-->
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="src/assets/js/bin/materialize.min.js"></script>
+        <script src="dist/assets/js/typed.min.js"></script>
         
         <script>
             $(document).ready(function(){
                 $('.sidenav').sidenav();
+                
+                var welcomeTitle = new Typed('.welcome-title', {
+                    strings: ["<span class='title'>Olá, Bem vindo ao meu portfolio!</span><br><span class='subtitle'>Sou um Web Developer especializado em front-end.</span>"],
+                    typeSpeed: 40,
+                });
+                
+
             });
         </script>
+        <script type="text/javascript">
+            function showIt() {
+              document.getElementById("hidden").style.visibility = "visible";
+            }
+            setTimeout("showIt()", 6500); // after 1 sec
+        </script>
+        
     </body>
 </html>
