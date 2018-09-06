@@ -135,6 +135,10 @@ ol{
 h4.center{
     position: relative;
 }
+
+@media (max-width: 767px){
+    font-size: 1em;
+}
 h4.center:before{
     left: 0;
 }
