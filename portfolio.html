@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+        <title>Renato Mello Web Developer</title>
+
+        <!-- CSS  -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <link href="dist/assets/stylesheets/materialize.css" type="text/css" rel="stylesheet"   media="screen,projection"/>
+        <link href="dist/assets/stylesheets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="dist/assets/stylesheets/horizontal-timeline.css" rel="stylesheet" media="screen,projection"/>
+        <link href="dist/assets/stylesheets/hover-box.css" rel="stylesheet" media="screen,projection"/>
+<!--        <link href="dist/assets/stylesheets/filter.css" rel="stylesheet" media="screen,projection"/>-->
+        
+        
+    </head>
+    <body>
+        <header>
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li>
+                    <div class="user-view">
+                        <div class="background"></div>
+                        <a href="#user">
+                            <img class="circle" src="dist/assets/images/eu.png">
+                        </a>
+                        <a href="#name">
+                            <span class="white-text name">Renato Mello</span>
+                        </a>
+                        <a href="#email"><span class="white-text email">renatogsmello@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a class="waves-effect" href="index.html"><i class="material-icons">person</i>Sobre</a></li>
+                <li><a class="waves-effect" href="education.html"><i class="material-icons">school</i>Formação Acadêmica</a></li>
+                <li><a class="waves-effect" href="skills.html"><i class="material-icons">code</i>Habilidades</a></li>
+                <li><a class="waves-effect" href="work.html"><i class="material-icons">work</i>Experiência Profissional</a></li>
+                <li class="active"><a class="waves-effect" href="portfolio.html"><i class="material-icons">photo_library</i>Portfolio</a></li>
+                
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+        </header>
+        <main>
+            <div class="container">
+                <h4 class="center mt-50">Portfolio</h4>
+<!--
+                <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('graficos')"> Gráficos</button>
+                    <button class="btn" onclick="filterSelection('web')"> Web</button>
+                </div>
+-->
+                <div class="button-group filters-button-group">
+                    <button class="btn is-checked" data-filter="*">todos</button>
+                    <button class="btn" data-filter=".graficos">Gráficos</button>
+                    <button class="btn" data-filter=".web">Web</button>
+                </div>
+                <div class="grid">
+                <!-- TOP ROW -->
+                    <figure class="effect-slideleft one-half element-item graficos">
+                        <img src="dist/assets/images/papo_rubro_negro.png" width="600" height="200" alt="Papo Rubro Negro"/>
+                        <figcaption>
+                            <h4>Papo Rubro Negro</h4>
+                            <a href="#modal1" class="button modal-trigger">Detalhes</a>
+                        </figcaption>			
+                    </figure>
+                    <figure class="effect-slideright one-half element-item web">
+                        <img src="https://unsplash.it/600/200?random" alt="img02"/>
+                        <figcaption>
+                            <h2>Slide <span>Down</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <a href="#modal2" class="button modal-trigger">Detalhes</a>
+                        </figcaption>			
+                    </figure>
+
+                <!-- MIDDLE ROW -->	
+                    <figure class="effect-slideleft one-half element-item graficos">
+                        <img src="https://unsplash.it/600/200?random" alt="img07"/>
+                        <figcaption>
+                            <h2>Slide <span>Left</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <a href="#" class="button">Detalhes</a>
+                        </figcaption>			
+                    </figure>
+
+                <!-- BOTTOM ROW -->	
+                    <figure class="effect-slideright one-half element-item web">
+                        <img src="https://fillmurray.com/600/200" alt="img14"/>
+                        <figcaption>
+                            <h2>Slide <span>Up</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <a href="#" class="button">Detalhes</a>
+                        </figcaption>			
+                    </figure>
+                    <figure class="effect-slideleft one-half element-item web">
+                        <img src="https://unsplash.it/600/200" alt="img04"/>
+                        <figcaption>
+                            <h2>Slide <span>Left</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <a href="#" class="button">Detalhes</a>
+                        </figcaption>			
+                    </figure>
+                    <figure class="effect-slideright one-half element-item web">
+                        <img src="https://unsplash.it/600/200" alt="img08"/>
+                        <figcaption>
+                            <h2>Slide <span>Right</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                            <a href="#" class="button">Detalhes</a>
+                        </figcaption>			
+                    </figure>
+                </div>
+                
+                <!-- Modal Structure -->
+                <div id="modal1" class="modal">
+                    <div class="modal-content p-0">
+                        <div class="carousel carousel-slider center">
+                            <div class="carousel-item" href="#one!">
+                                <img src="dist/assets/images/papo_rubro_negro.png" width="600" height="200">
+                            </div>
+                        </div>
+                        <h5 class="black-text p-24">Papo Rubro Negro</h5>
+                        <p class="black-text pl-24">A logo foi desenvolvida para um blog de notícias sobre futebol.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">fechar</a>
+                    </div>
+                </div>
+                
+                <!-- Modal Structure -->
+                <div id="modal2" class="modal">
+                    <div class="modal-content p-0">
+                        <div class="carousel carousel-slider center">
+                            <div class="carousel-item" href="#one!">
+                                <img src="https://fillmurray.com/600/200">
+                            </div>
+                        </div>
+                        <h5 class="black-text p-24">Papo Rubro Negro</h5>
+                        <p class="black-text pl-24">A logo foi desenvolvida para um blog de notícias sobre futebol.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#!" class="modal-close waves-effect waves-green btn-flat">fechar</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+
+
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="src/assets/js/bin/materialize.min.js"></script>
+<!--        <script src="dist/assets/js/masonry.pkgd.min.js"></script>-->
+        <script src="dist/assets/js/isotope.js"></script>
+<!--
+        <script>
+            
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("filterDiv");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "showDiv");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showDiv");
+              }
+            }
+
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+        </script>
+-->
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+                
+                $('.modal').modal();
+                
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true
+                });
+
+            // init Isotope
+            var $grid = $('.grid').isotope({
+              itemSelector: '.element-item',
+              layoutMode: 'fitRows'
+            });
+            // filter functions
+            var filterFns = {
+              // show if number is greater than 50
+              numberGreaterThan50: function() {
+                var number = $(this).find('.number').text();
+                return parseInt( number, 10 ) > 50;
+              },
+              // show if name ends with -ium
+              ium: function() {
+                var name = $(this).find('.name').text();
+                return name.match( /ium$/ );
+              }
+            };
+            // bind filter button click
+            $('.filters-button-group').on( 'click', 'button', function() {
+              var filterValue = $( this ).attr('data-filter');
+              // use filterFn if matches value
+              filterValue = filterFns[ filterValue ] || filterValue;
+              $grid.isotope({ filter: filterValue });
+            });
+            // change is-checked class on buttons
+            $('.button-group').each( function( i, buttonGroup ) {
+              var $buttonGroup = $( buttonGroup );
+              $buttonGroup.on( 'click', 'button', function() {
+                $buttonGroup.find('.is-checked').removeClass('is-checked');
+                $( this ).addClass('is-checked');
+              });
+            });
+
+            });
+        </script>
+        
+        
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.filterDiv {
+  display: none !important;
+    -webkit-transition: width 2s, height 2s; /* Safari */
+    transition: width 2s, height 2s;
+}
+
+.showDiv {
+  display: inline-block!important;
+    -webkit-transition: width 2s, height 2s; /* Safari */
+    transition: width 2s, height 2s;
+}
+
+/*
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+*/
+
